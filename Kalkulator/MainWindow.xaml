@@ -7,8 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="105,71,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="123,159,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="123,42,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="264,42,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="+&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Margin="124,89,0,0" RenderTransformOrigin="-3.422,-2.644" Height="16">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.504"/>
+                    <TranslateTransform X="0.446" Y="-0.69"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="-&#xD;&#xA;" HorizontalAlignment="Left" Margin="153,88,0,0" VerticalAlignment="Top" Width="29" Click="Button_Click" Height="20"/>
+        <Button Content="*&#xD;&#xA;" HorizontalAlignment="Left" Margin="201,88,0,0" VerticalAlignment="Top" Width="42" Height="20" RenderTransformOrigin="-0.857,0.4"/>
+        <Button Content="/&#xD;&#xA;" HorizontalAlignment="Left" Margin="264,88,0,0" VerticalAlignment="Top" Width="41" Height="20" RenderTransformOrigin="-1.366,0.5"/>
 
     </Grid>
 </Window>
