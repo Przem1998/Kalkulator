@@ -24,5 +24,16 @@ namespace Kalkulator
         {
             InitializeComponent();
         }
+        stas st = new stas();
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            result.Text = Convert.ToString(st.podziel(Convert.ToDouble(pierwszaliczba.Text), Convert.ToDouble(drugaliczba.Text)));
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            result.Text=Convert.ToString(st.mnoz(Convert.ToDouble(pierwszaliczba.Text), Convert.ToDouble(drugaliczba.Text)));
+        }
     }
 }
