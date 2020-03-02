@@ -21,6 +21,7 @@ namespace Kalkulator
     public partial class MainWindow : Window
     {
         AddRemove activity = new AddRemove();
+        multiply_divide ab = new multiply_divide();
         public MainWindow()
         {
             InitializeComponent();
@@ -59,12 +60,31 @@ namespace Kalkulator
 
         private void Multiple_Click(object sender, RoutedEventArgs e)
         {
+            double valueA = 0;
+            double valueB = 0;
+            try
+            {
+                valueA = double.Parse(aField.Text);
+                valueB = double.Parse(bField.Text);
+
+            }
+            catch (System.FormatException) { }
+            resultActivity.Text = "=" + ab.multiply(valueA, valueB);
 
         }
 
         private void Divide_Click(object sender, RoutedEventArgs e)
         {
+            double valueA = 0;
+            double valueB = 0;
+            try
+            {
+                valueA = double.Parse(aField.Text);
+                valueB = double.Parse(bField.Text);
 
+            }
+            catch (System.FormatException) { }
+            resultActivity.Text = "=" + ab.divide(valueA, valueB);
         }
      
 
